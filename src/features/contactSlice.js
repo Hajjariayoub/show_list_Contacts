@@ -15,7 +15,7 @@ const contactSlice=createSlice({
             const {id,matricule,nom,prenom,tel,email}=action.payload
             const exictingContact=state.find(contact=>contact.id === id)
            if(exictingContact){
-// exictingContact ila kan fih chi contact , hit ghi that fih contact li 3ndo dak id ljna fi payload , bhl 9litlh mn contacts ghatchd dk contact tbdl fih ama filter tched mn contacts toht fi array jdida find la tkhedm nichan m3a contact lfi contacts l3ndo dk id
+
             exictingContact.matricule=matricule
             exictingContact.nom=nom
             exictingContact.prenom=prenom
